@@ -1,0 +1,131 @@
+/* laurent-perren-MZu9kv-0ApE-unsplash */
+
+html {
+    scroll-behavior: smooth;
+}
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+#jobsImage{
+    padding: 310px 0 300px 0;
+    background-image: url("images/man-flying-a-helicopter-2868217.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    background-color: rgb(196, 195, 195);
+}
+
+#testimonials{
+    padding: 50px 0 90px 0;
+    background-image: url("images/indeximage3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    background-color: rgb(196, 195, 195);
+}
+
+#FAQimage{
+    padding-bottom: 50%;
+    /* background-image: url("images/aeroplane-air-aircraft-airplane-240524.jpg"); */
+    background-image: url("images/airplane-engine-459402.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    background-color: rgb(196, 195, 195);
+}
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 100px;
+  }
+
+  .fa:hover {
+    color: whitesmoke;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-instagram {
+background: #125688;
+color: white;
+}
+
+#footer{
+    padding-top: 8vh;
+    padding-bottom: 5vh;
+    background-color: rgb(57, 164, 172);
+}
+
+#externalLinks{
+    color: white;
+}
+
+#tabs{
+    color: rgb(57, 164, 172);
+    text-decoration: none;
+    text-decoration-color: #de5246;
+}
+
+#buttonFAQ:hover{
+    text-decoration: none;
+    background-color: rgb(211, 211, 211);
+    
+}
+
+#buttonFAQ:focus, #buttonFAQ:active{
+outline: none !important;
+  box-shadow: none !important;
+}
+
+#buttonFAQ{
+    transition: background-color .5s;
+}
+
+#tabs2{
+    color: #de5246;;
+}
+
+#navbarLink:hover{
+    text-decoration: underline;
+}
+
+
+#navbarLink{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}

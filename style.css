@@ -1,0 +1,367 @@
+/* GLOBAL VARIABLES */
+/* Slogan: The sky’s the limit! */
+
+*{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow-x: hidden;
+}
+
+*{
+    text-align: center;  
+}
+
+/* INDEX.HTML Styling */
+.sr-only{
+    font-weight: bolder;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10px;
+    color: white;
+    padding: 10px;
+    opacity: 50%;
+  }
+
+  #navbarHighlight{
+      font-weight: bolder;
+      font: 100px;
+      color: white;
+  }
+
+  .random {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+#mainnavbar{ 
+    font-size: larger;
+}
+
+
+#navbarLink:hover, #navbarDropdown:hover{
+    text-decoration: underline;
+}
+
+
+#navbarLink, #navbarDropdown{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+
+
+
+.landingImage{
+    padding: 40vh 0 60vh 0;
+    background-image: url("images/man-and-woman-walks-on-dock-1268855.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: rgb(196, 195, 195);
+}
+
+#container{
+    position: relative;
+    text-align: center;
+}
+
+.sloganMain {
+    position: absolute;
+    bottom: 35vh;
+    left: 4vh;
+  }
+
+  #slogan{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 70px;
+
+  }
+
+
+  #aboutImage{
+    background-color: red;
+    align-items: center;
+}
+
+  #aboutImageDiv{
+    background-color: rgb(17, 17, 17);
+    width: auto;
+    height: 100%;
+    margin: 10px;
+    background-image: url("images/pilot.jpg");
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* #aboutImage{
+    background-color: aqua;
+    background-image: url("aboutusimg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+.aboutUstitle{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    padding-top: 9vh;
+    padding-bottom: 6vh;
+}
+
+#aboutText{
+    background-color: blueviolet;
+}
+
+#aboutTextDiv{
+    padding: 8%;
+}
+
+#aboutTextbig{
+    font-size: 22px;
+    font-weight: bold;
+    text-align: left;
+    padding-bottom: 5%;
+    color: black;
+}
+
+#aboutTextSmall{
+    text-align: left;
+    font-size: 16px;
+    padding-bottom: 1%;
+    color: black;
+}
+
+#contactButton{
+    color: whitesmoke;
+    /* background-color: #ffa500; */
+    background-color: #e4574a;
+    border: #de5246;
+    text-align: left;
+}
+
+#contactButton:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#contactb{
+    text-align: left;
+    padding-left: 8%;
+    padding-bottom: 5%;
+}
+
+#rollingNums{
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+.counter{
+    color: #252424;
+}
+
+#rollingText{
+    color: rgb(109, 107, 107);;
+}
+
+#servicesBack{
+    padding: 100px 0 100px 0;
+    background-image: url("images/colosseum-coliseum-flavian-amphitheatre-rome-10922.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: rgb(196, 195, 195);
+}
+
+#headingFont{
+    font-weight: bolder;
+    color: whitesmoke;
+}
+
+#headingFontBlack{
+    color: black;
+}
+
+/* Image Gallery */
+#image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  #containerDIV:hover #image {
+    opacity: .5;
+  }
+  
+  #containerDIV:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    font-size: 18px;
+    padding: 16px 32px;
+  }
+
+.newsBackground{
+    padding: 30px 0 30px 0;
+    background-image: url("images/woman-taking-pictures-of-ruins-2087391.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: rgb(196, 195, 195);
+}
+
+
+#externalLinks{
+    color: white;
+}
+
+
+
+
+
+
+
+
+.services{
+    padding: 125px 0 125px 0;
+    background-color: rgb(196, 195, 195);  
+}
+
+
+
+
+
+
+
+
+
+.destinations{
+    padding: 110px 0 110px 0;
+    background-color: rgb(116, 112, 112);  
+}
+
+.otherPages{
+    padding: 135px 0 135px 0;
+    background-color: rgb(196, 195, 195);   
+}
+
+.footer{
+    padding-top: 8vh;
+    padding-bottom: 5vh;
+    background-color: rgb(57, 164, 172);   
+}
+
+/* BOOK.HTML Styling */
+
+.imageB{
+    padding: 100px 0 100px 0;
+    background-color: rgb(196, 195, 195);
+}
+
+.bookingB{
+    padding: 15px 0 15px 0;
+    background-color: rgb(116, 112, 112);   
+}
+
+.formB{
+    padding: 200px 0 200px 0;
+    background-color: whitesmoke; 
+}
+
+/* SCHEDULES.HTML Styling */
+
+.imageS{
+    padding: 100px 0 100px 0;
+    background-color: rgb(196, 195, 195);  
+}
+
+.searchS{
+    padding: 50px 0 50px 0;
+    background-color: rgb(116, 112, 112);      
+}
+
+.scheduleS{
+    padding: 200px 0 200px 0;
+    background-color: rgb(196, 195, 195);     
+}
+
+/* FLYER.HTML Styling */
+
+.imageF{
+    padding: 100px 0 100px 0;
+    background-color: rgb(196, 195, 195);        
+}
+
+.infoF{
+    padding: 260px 0 260px 0;
+    background-color: rgb(116, 112, 112);  
+}
+
+.contactF{
+    padding: 25px 0 25px 0;
+    background-color: rgb(196, 195, 195); 
+}
+
+/* CONTACT.HTML Styling */
+
+.imageC{
+    padding: 100px 0 100px 0;
+    background-color: rgb(196, 195, 195);     
+}
+
+.contactC{
+    padding: 260px 0 260px 0;
+    background-color: rgb(116, 112, 112);
+}
+
+
+
+.bookingContain{
+    background-color: #000000;
+}
+
+.bookImage{
+    padding: 0px 0 0px 0;
+    background-image: url("images/greece.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+    opacity: 1;
+}

@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers | Eminence Airlines</title>
+    <link rel="icon" href="/Images/logo.PNG">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="job.css">
+</head>
+<body>
+    
+    <div class="travelMain">
+        <nav id="mainnavbar" class="navbar bg-dark navbar-expand-lg fixed-top">
+            <div id="navbarDIV" class="container-fluid">
+            
+              <a id="navbarLink" class="navbar-brand" href="index.html">
+                <img src="Images/logowhite.png" style="margin-top: 10px;" width="60" height="60" alt=""> <a style="color: rgb(255, 255, 255); font-size: 20px;" class="nav-link pr-4" href="index.html"><span style="font-size: larger; margin-left: -10px;">Eminence Airlines</span></a>
+              </a>
+
+              <button id="toogleNavbar" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="Images/whiteham.png" width="32" height="21" alt="">
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a id="navbarLink" class="nav-link pr-4" href="index.html"><span>Home</span></a>
+                  </li>
+                  <li class="nav-item active">
+                    <a id="navbarLink" class="nav-link pr-4" href="travel.html">Travel</a>
+                  </li>
+                  
+                  <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="/travel.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Travel
+                    </a>
+                    <div class="dropdown-menu" id="navbarLink" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" id="navbarLink" href="/travel.html#bookingContain">Booking</a>
+                      <a class="dropdown-item" id="navbarLink" href="/travel.html#parentSCH">Schedules</a>
+                      <a class="dropdown-item"id="navbarLink"  href="/travel.html#freqImg">Frequent Flyer</a>
+                    </div>
+                  </li> -->
+                  <li class="nav-item">
+                    <a id="navbarLink" class="nav-link pr-4" href="careers.html" style="font-weight: bolder;">Careers</a>
+                  </li>
+                  <li class="nav-item">
+                      <a id="navbarLink" class="nav-link pr-4" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+            <hr>
+            </nav>
+  <style>
+  .bg-dark{
+      transition: 800ms ease;  
+      background: transparent !important;
+  }
+  
+    .bg-dark.scrolled{
+      background:rgb(82, 180, 187) !important;
+    }
+  
+  </style>
+
+    <div id="jobsImage" style="padding-bottom: 45vh;">
+        <h1 style="font-size: 75px; color: white; font-family: 'Montserrat', sans-serif; padding-top: 11%;">CAREERS</h1>
+    </div>
+
+    <div id="oppurtunites" class="container pb-5">
+        <div style="text-align: center;">
+            <h1 class="pb-1 pt-5">Job Openings</h1>
+            <hr>
+            <h6 class="pb-4">At Eminence Airlines, we have jobs in a multitude of departments. We work as a team to achive our main goal, providing a pleasant expereince for our passengers. Select your prefered location and job department to see available openings. Fill in your email address in order to get more information about the job and start getting in contact with our hiring representatives. Good luck applying!</h6>
+        </div>
+    
+        <form id="jobSelect" onsubmit="jobs()">
+            <div class="row">
+            <div class="col-4">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <label class="input-group-text" for="inputGroupSelect01">Location</label>
+                    </div>
+                    <select class="custom-select" id="inputGroupSelect01">
+                      <option value="0">Any</option>
+                      <option value="1">Toronto, Canada</option>
+                      <option value="2">Vancouver, Canada</option>
+                      <option value="3">Los Angeles, USA</option>
+                      <option value="4">New York, USA</option>
+                      <option value="5">Mexico City, Mexico</option>
+                      <option value="6">Beijing, China</option>
+                      <option value="7">New Delhi, India</option>
+                      <option value="8">Tokyo, Japan</option>
+                      <option value="9">São Paulo, Brazil</option>
+                    </select>
+                  </div>
+            </div>
+            <div class="col-4">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <label class="input-group-text" for="inputGroupSelect2">Department</label>
+                    </div>
+                    <select class="custom-select" id="inputGroupSelect2">
+                      <option value="0a">Any</option>
+                      <option value="1a">Service</option>
+                      <option value="2a">Finance</option>
+                      <option value="3a">IT (Information Technology)</option>
+                    </select>
+                  </div>
+            </div>
+            <div class="col-4">
+                <div class="form-group">
+                    <input type="email" class="form-control" required placeholder="Enter Your Email">
+                  </div>
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-4">
+                <button type="submit" id="viewop" class="btn btn-primary mt-3" style="background-color: #e4574a;
+                border: #de5246;">View Opportunities</button>
+            </div>
+            <style>
+              #viewop:hover{
+                box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+              }
+            </style>
+            </div>
+        </form>
+    </div>
+
+
+    <div class="MAINjobs">
+        <div id="allJobs">
+            <div class="row">
+                <div class="col-6">
+    
+                    <div class="jumbotron m-5">
+                        <h2>Financial Analyst</h1>
+                          <hr>
+                          <p>Starting Salary: $80,000</p>
+                          <p>Objectives: Acts as a business partner to management and executives jointly developing forecasting, reporting, analysis, and providing insight into a wide range of business and financial decisions. Initiates analysis of monthly variances, and works directly with operational management, executives, and the financial reporting team to identify and resolve variances to plan.</p>
+                          <p>Requirements: (CPA, CFA) or MBA an asset. 2+ years of work experience in FP&A supporting business units or similar experience. Deadline driven - Workloads tend to peak during the key deadlines of the annual budget, and forecast processes. Experience in operational and cost savings analysis, and the ability to make sound financial decisions, which may impact the company.</p>
+                    </div>
+
+                </div>
+                <div class="col-6">
+                    <div class="jumbotron m-5">
+                        <h2>Aircraft Maintenance Engineer</h1>
+                          <hr>
+                          <p>Starting Salary: $90,000</p>
+                        <p>Objectives: As a member of the Ornge Air maintenance team, successful candidates provide complete aircraft maintenance and support. Services include airframe inspections, repair and modifications, power plant removal and installations and repairs, while ensuring proper adherence to Company policies and procedures.                                </p>
+                        <p>Requirements: Must hold a current and valid Transport Canada M1 and/or M2 license with a minimum of three (3) years’ experience signing maintenance releases on normal category aircraft. Preference given to applicant’s with AW139 experience;
+                            Must be eligible to hold a company ACA with a AW139 rating in accordance with MPM Section 3.</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="jumbotron m-5">
+                        <h2>First Officer</h1>
+                          <hr>
+                          <p>Starting Salary: $70,000</p>
+                          <p>Objectives: Responsible for the operation and safety of the aircraft and all persons on board during the flight, and transporting all persons and cargo on board during flight.
+                              Manipulates the flight controls in accordance with company policy. Able to train new co-workers and be an overall team player</p>
+                          <p>Requirements: ATPL or CPL/Multi-IFR with IATRA written
+                              1500 hours total time which should include 500 hours multi-turbine.
+                              Completion of secondary school and graduation from a certified flying or aviation school is required.
+                              A commercial pilot's licence or an air transport pilot's licence is required.</p>
+                    </div>
+
+
+                </div>
+                <div class="col-6">
+
+                    <div class="jumbotron m-5">
+                        <h2>Software Developer</h1>
+                            <hr>
+                            <p>Starting Salary: $80,000</p>
+                            <p>Objectives: Participate in the design, development and deployment of new software solutions for Airport Systems (including kiosk), Finance, Reservation, and Flight Operations Systems. Work collaboratively with business analysts, project managers, Quality Assurance, and other developers.
+                                                        </p>
+                            <p>Requirements: Bachelor’s degree in computer science or engineering (or equivalent) preferred. Minimum of 2 years experience developing Microsoft .NET software solutions. Strong .NET software development skills (C#) using Visual Studio 2015 or above. Experience developing ASP.NET MVC applications.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="serviceJobs" style="display: none;">
+            <div class="row">
+                <div class="col-6">
+                    <div class="jumbotron m-5">
+                        <h2>First Officer</h1>
+                            <hr>
+                            <p>Starting Salary: $70,000</p>
+                            <p>Objectives: Responsible for the operation and safety of the aircraft and all persons on board during the flight, and transporting all persons and cargo on board during flight.
+                                Manipulates the flight controls in accordance with company policy. Able to train new co-workers and be an overall team player</p>
+                            <p>Requirements: ATPL or CPL/Multi-IFR with IATRA written
+                                1500 hours total time which should include 500 hours multi-turbine.
+                                Completion of secondary school and graduation from a certified flying or aviation school is required.
+                                A commercial pilot's licence or an air transport pilot's licence is required.</p>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="jumbotron m-5">
+                        <h2>Flight Attendant</h1>
+                          <hr>
+                          <p>Starting Salary: $35,000</p>
+                        <p>Objectives: Complete all duties and responsibilities for passenger safety and comfort, in accordance with the approved Eminence Airlines Flight Attendant Manual along with company policies.
+                            During an emergency, follow the instructions of the Captain.
+                            Complete all required safety announcements and demonstrations. Be able to handle situations in pressure with patience.</p>
+                        <p>Requirments:Grade 12 diploma or equivalent is required.
+                            Post-Secondary education in a related field is an asset.
+                            Previous Flight Attendant experience is an asset.
+                            CT201 certificate from the Inflight Institute is strongly recommended.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="jumbotron m-5">
+                        <h2>Aircraft Maintenance Engineer</h1>
+                          <hr>
+                          <p>Starting Salary: $80,000</p>
+                        <p>Objectives: Participate in the design, development and deployment of new software solutions for Airport Systems (including kiosk), Finance, Reservation, and Flight Operations Systems. Work collaboratively with business analysts, project managers, Quality Assurance, and other developers to ensure products are delivered on time and with all required documentation. </p>
+                        <p>Requirements: Bachelor’s degree in computer science or engineering (or equivalent) preferred. Minimum of 2 years experience developing Microsoft .NET software solutions. Strong .NET software development skills (C#) using Visual Studio 2015 or above. Experience developing ASP.NET MVC applications.</p>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="jumbotron m-5">
+                        <h2>Air Traffic Controller</h1>
+                          <hr>
+                          <p>Starting Salary: $80,000</p>
+                            <p>Objectives: Responsible for air traffic in a large section of airspace. Use radio communication to issue instructions and clearances. Helping pilots select a runway to controlling the movement of vehicles on runways and taxiways. Provide flight-planning services and deliver in-depth interpretive weather information and en-route flight information to aircrafts. </p>
+                            <p>Requirements: ATPL or CPL/Multi-IFR with IATRA written
+                                1500 hours total time which should include 500 hours multi-turbine.
+                                Completion of secondary school and graduation from a certified flying or aviation school is required.
+                                A commercial pilot's licence or an air transport pilot's licence is required.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="supplyJobs" style="display: none;">
+            <div class="row">
+                <div class="col">
+
+                    <div class="jumbotron m-5">
+                        <h2>Financial Analyst</h1>
+                          <hr>
+                          <p>Starting Salary: $80,000</p>
+                        <p>Objectives: Acts as a business partner to management and executives jointly developing forecasting, reporting, analysis, and providing insight into a wide range of business and financial decisions. Initiates analysis of monthly variances, and works directly with operational management, executives, and the financial reporting team to identify and resolve variances to plan.</p>
+                        <p>Requirements: (CPA, CFA) or MBA an asset. 2+ years of work experience in FP&A supporting business units or similar experience. Deadline driven - Workloads tend to peak during the key deadlines of the annual budget, and forecast processes. </p>
+                    </div>
+
+                </div>
+                <div class="col">
+
+                    <div class="jumbotron m-5">
+                        <h2>Regional Sales Manager</h1>
+                          <hr>
+                          <p>Starting Salary: $70,000</p>
+                        <p>Objectives: The airline district sales manager oversees all of a district’s reservations and ticket sales offices, and the sales representatives in that district. Sales representatives promote their airline in an effort to sell cargo space and plane tickets.</p>
+                        <p>Requirments: College degree in marketing or equivalent.
+                                        4 years of experience directly related to the field. Ability to listen, question, and analyze customer needs, to advise customers in order to establish trust and sell products and services, and to promote customer loyalty.</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+
+                    <div class="jumbotron m-5">
+                        <h2>Reporting Analyst</h1>
+                          <hr>
+                          <p>Starting Salary: $70,000</p>
+                            <p>Objectives: Prepare reports and data which identify and track trends in the business (both aeronautical and financial) such as Headcount Analysis, Salary Analysis, Runway Capacity statistics, etc.
+                                Perform Ad hoc analysis to enable users to get up-to-the-minute insights into data not yet analyzed by a scheduled report                                </p>
+                            <p>Requirements: University Degree with 1-3 years of experience in IT Finance and/or Business, Engineering. Industry experience or industry related experience (IT db administration, Financial Reporting, aviation, transportation, etc.).</p>
+                    </div>
+
+                </div>
+                <div class="col">
+
+                    <div class="jumbotron m-5">
+                        <h2>Sales Representative</h1>
+                          <hr>
+                          <p>Starting Salary: $60,000</p>
+                        <p>Objectives: Act as a representive for airlines and promote benefits and advantages of Eminence Airlines. Establish a solid business relationship with prospects. Accompany the customer throughout their project by taking charge of all internal aspects.</p>
+                        <p>Requirements: College degree in marketing or equivalent.
+                                        2 years of experience directly related to the field. Ability to listen, question, and analyze customer needs, to advise customers in order to establish trust and and promote customer loyalty.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="itJobs" style="display: none;">
+            <div class="row">
+                <div class="col-6">
+
+                    <div class="jumbotron m-5">
+                        <h2>Technical Solutions Specialist</h1>
+                          <hr>
+                          <p>Starting Salary: $95,000</p>
+                        <p>Objectives: Reporting to the Associate Director, Enterprise Architect, this position is responsible for partnering with all departments via engagement on projects in order to ensure the best fit in terms of technological infrastructure and software needs for the business. The IT Technical Solutions Specialist will provide technical leadership. 
+                        </p>
+                        <p>Requirements: Bachelor’s degree in Computer Science or Engineering and relevant technology or industry certifications. Minimum five (5) years experience in system architecture. Broad knowledge of Enterprise-class networks; Windows/Unix platforms; storage area network (SAN); enterprise monitoring solutions; desktops, laptops, and other mobile devices.</p>
+                    </div>
+
+                </div>
+                <div class="col-6">
+
+
+                    <div class="jumbotron m-5">
+                        <h2>Solution Architect</h1>
+                          <hr>
+                          <p>Starting Salary: $95,000</p>
+                            <p>Objectives: Participate in the design, development and deployment of new software solutions for Airport Systems (including kiosk), Finance, Reservation, and Flight Operations Systems. Apply business rules and incorporate client requirements to devise effect and efficent technica solutions with high-level interface.
+                                                        </p>
+                            <p>Requirements: Bachelor’s degree in computer science or engineering (or equivalent) preferred. Cerfication in cloud technologies including AWS, Microsoft Azure or Google Cloud. Understanding of flow-of-system and signifance of business rules to technical structures. Able to create diagrams to represent method in order to interconnect a variety of systems and databases.</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+
+                    <div class="jumbotron m-5">
+                        <h2>Software Developer</h1>
+                          <hr>
+                          <p>Starting Salary: $80,000</p>
+                          <p>Objectives: Participate in the design, development and deployment of new software solutions for Airport Systems (including kiosk), Finance, Reservation, and Flight Operations Systems. Work collaboratively with business analysts, project managers, Quality Assurance, and other developers to ensure products are delivered on time and with all required documentation and testing.
+                                                      </p>
+                          <p>Requirements: Bachelor’s degree in computer science or engineering (or equivalent) preferred. Minimum of 2 years experience developing Microsoft .NET software solutions. Strong .NET software development skills (C#) using Visual Studio 2015 or above. Experience developing ASP.NET MVC applications.</p>
+                    </div>
+
+                </div>
+                <div class="col-6">
+
+                    <div class="jumbotron m-5">
+                        <h2>Platform Engineer</h1>
+                          <hr>
+                          <p>Starting Salary: $78,000</p>
+                            <p>Objectives: Build new infrastructure, explore new tools, automate technical platforms.
+                                A Platform Engineer can work across all product groups, teaching developers to leverage tools to make their lives easier as well as build out new tool chains and support a variety of technologies.</p>
+                            <p>Requirments:You have a bachelor's degree in Computer Science or Software Engineering. We also accept graduate degree, related field, equivalent training or work experience.  You have lots of experience with scripting languages (especially bash and python). You are very familiar with CI tools such as Jenkins, Bitbucket Pipelines or others. Familiar with container technology like Docker, ECS, K8S.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+    <div id="testimonials">
+        <div id="testimonials">
+            <div style="text-align: center;">
+                <h1 style="color: azure;" class="pb-5">Testimonials</h1>
+            </div>
+                <div class="row d-flex justify-content-around">
+                    <div class="col-3" style="border-radius: 10px; background-color: rgba(255, 255, 255, 0.9);">
+                        <div class="ml-3" style="text-align: center;">
+                            <h2>Aaron Smith</h1>
+                            <hr style="background-color: black;">
+                            <div class="pb-3" style="text-align: left;">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div style="text-align: left;">
+                                <p class="font-italic">Aircraft Maintenance Engineer</p>
+                            </div>
+                            <div style="text-align: left;">
+                                <p>"It's been 10 years with Eminence Airlines now. Completing a decade with Eminence Airlines has been one of the memorable moments. It’s been filled with learning and growing within the organization. I am grateful to all my colleagues in Eminence Airlines who had contributed in my journey. I am able to grow professionally and this wouldn't be possible without everyone support!"</p>
+                            </div>           
+                        </div>
+                    </div>
+                    <div class="col-3" style="border-radius: 10px; background-color: rgba(255, 255, 255, 0.9);">
+                        <div class="" style="text-align: center;">
+                            <h2>Neel Patel</h1>
+                            <hr style="background-color: black;">
+                            <div class="pb-3" style="text-align: left;">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div style="text-align: left;">
+                                <p class="font-italic">First Officer</p>
+                            </div>
+                            <div style="text-align: left;">
+                                <p>" I am proud of being a part of Eminence Airlines for the past 5 years. Since I joined the company as fresh graduate, I have had various chances to build up my career here as a Pilot. I am also happy working with my colleagues in Eminence Airlines and wish only the best for our continued success in providing services to our passengers."</p>
+                            </div>           
+                        </div>
+                    </div>
+                    <div class="col-3" style="border-radius: 10px; background-color: rgba(255, 255, 255, 0.9);">
+                        <div class="" style="text-align: center;">
+                            <h2>Emily Wang</h1>
+                            <hr style="background-color: black;">
+                            <div class="pb-3" style="text-align: left;">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div style="text-align: left;">
+                                <p class="font-italic">Intermediate Software Developer</p>
+                            </div>
+                            <div style="text-align: left;">
+                                <p>"This company has an amazing atmosphere! Together we work as a team to make Eminence Airlines a great company with strong core values. I have been fortunate to have been surrounded by great individuals; some of whom really care about their jobs and are generous in sharing knowledge for the purpose of making the teams better."</p>
+                            </div>           
+                        </div>
+                    </div>
+                </div>        
+            </div>
+    </div>
+
+    <div id="FAQ" class="mb-5">
+        <div style="text-align: center;" class="pt-5 mb-5">
+            <h1>Frequently Asked Questions</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-6">
+                <div class="container">
+                    <div id="accordion">
+                        <div class="card">
+                          <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                              <button id="buttonFAQ" class="btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <h5 id="tabs">How Long is the Hiring Process?</h5>
+                              </button>
+                            </h5>
+                          </div>
+                          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                                The hiring process can vary from 2 weeks to 1 month. It depends on the type of job you are going to apply for. For many jobs, we do have various stages from knowledge to practical componenets. However, we ensure that every employee has an equal and fair chance of being employed.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                              <button class="btn collapsed" id="buttonFAQ" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <h5 id="tabs2">What is the Minimum Age to Apply for a Job?</h5>
+                              </button>
+                            </h5>
+                          </div>
+                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                                The minimum age to apply for a job at Eminence Airlines is 18, however many jobs will require the applicant to be older than 18. In order to find the minimum age for a specific job, enter your email address above to find more details about your future job.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                              <button class="btn collapsed" data-toggle="collapse" id="buttonFAQ" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <h5 id="tabs">Are there any Internship oppurtunites?</h5>
+                              </button>
+                            </h5>
+                          </div>
+                          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                            <div class="card-body">
+                                Yes, we abosolutely provide various oppurtnites to post-secondary school students. We ensure that each department creates new oppurtunities each summer to provide new learning experiences for students in order to help them take a step into their career. We relase summer jobs for students in April and the first batch of students arrives on starting of July.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                              <h5 class="mb-0">
+                                <button class="btn collapsed" id="buttonFAQ" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                  <h5 id="tabs2">How are the Working Conditions?</h5>
+                                </button>
+                              </h5>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                              <div class="card-body">
+                                The working conditions at Eminence Airlines are absolutely amazing! We make sure that each employee is provided with sufficent resources in order to feel comfortable working with Eminence Airlines. Every employee has a right to have flexible hours and has access to many sick days and paid days off throughout the year.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="card-header" id="headingFive">
+                              <h5 class="mb-0">
+                                <button class="btn collapsed" id="buttonFAQ" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                  <h5 id="tabs">What are the Benefits of Being an Employee?</h5>
+                                </button>
+                              </h5>
+                            </div>
+                            <div id="collapseFive" class="collapse show" aria-labelledby="headingFive" data-parent="#accordion">
+                              <div class="card-body">
+                                <ul>
+                                    <li>Extended health care</li>
+                                    <li>Vision care</li>
+                                    <li>Dental care</li>
+                                    <li>Education reimbursement</li>
+                                    <li>On-site parking</li>
+                                    <li>Company events & social hours</li>
+                                    <li>Vacation & paid time off</li>
+                                    <li>Life insurance</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                </div>
+            </div>
+            <div class="col-6" >
+                <img src="Images/Using-Humor-to-Create-a-Happy-Workplace.jpg" class="img-fluid pr-3" alt="Responsive image">
+                <!-- <div id="FAQimage"></div> -->
+            </div>
+        </div>
+
+    </div>
+
+    <div id="footer">
+        <div class= "row justify-content-around" style="padding-bottom: 1vh;">
+            <div class="col-2">
+                <h1 id="externalLinks" >Eminence Airlines</h1>
+                <br>
+                <h5 id="externalLinks" >The sky's the limit!</h5>
+              </div>
+              <div class="col-2">
+                <h5><a href="#" id="externalLinks">Home</a></h5>
+                <br>
+                <br>
+                <h5><a id="externalLinks" href="#">Book</a></h5>
+              </div> 
+              <div class="col-2">
+                <h5><a  id="externalLinks" href="#">Schedules</a></h5>
+                <br>
+                <br>
+                <h5><a id="externalLinks" href="#">Flyer Programs</a></h5>
+              </div> 
+              <div class="col-2">
+                <h5><a id="externalLinks" href="#">Careers</a></h5>
+                <br>
+                <br>
+                <h5><a id="externalLinks" href="#">Contact</a></h5>
+              </div> 
+            </div>
+            <hr style="background-color:rgb(224, 216, 216)">
+            <div style="text-align: center;">
+            <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/" target="_blank" class="fa fa-twitter"></a>
+            <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
+            <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.plus&hl=en" target="_blank" class="fa fa-google"></a>
+          </div>
+    </div>
+
+   
+    <script src="job.js"></script>
+    <script>
+        $(window).scroll(function(){
+        $('nav').toggleClass('scrolled', $(this).scrollTop() > 880);
+        });
+  
+        $('.counter').countUp({
+          'time': 2200,
+          'delay': 30
+           } );
+      </script>
+</body>
+</html>

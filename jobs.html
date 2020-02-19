@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers</title>
+    <link rel="stylesheet" href="job.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="careersMain">
+        <div id="jobsImage" style="text-align: left; padding-left: 3vh; padding-bottom:53vh;">
+            <h1 style="font-size: 75px; color: white; padding-top: 11%;">CAREERS</h1>
+        </div>
+
+        <div id="apply" style="padding-bottom: 50vh;">
+            <div class="container">
+                <div style="text-align: center;">
+                    <h1 class="pb-1 pt-5">Job Openings</h1>
+                    <hr>
+                    <h6 class="pb-4">Select your prefered location and job department to see available openings. Fill in your email address in order to get more information and apply for your future job here at Eminence Airlines!</h6>
+                    </div>
+                    <form id="jobSelect" onsubmit="jobs()">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <label class="input-group-text" for="inputGroupSelect01">Location</label>
+                            </div>
+                            <select class="custom-select" id="inputGroupSelect01">
+                              <option value="0">Any</option>
+                              <option value="1">Toronto, Canada</option>
+                              <option value="2">Vancouver, Canada</option>
+                              <option value="3">Los Angeles, USA</option>
+                              <option value="4">New York, USA</option>
+                              <option value="5">Mexico City, Mexico</option>
+                              <option value="6">Beijing, China</option>
+                              <option value="7">New Delhi, India</option>
+                              <option value="8">Tokyo, Japan</option>
+                              <option value="9">São Paulo, Brazil</option>
+                            </select>
+                          </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <label class="input-group-text" for="inputGroupSelect2">Department</label>
+                            </div>
+                            <select class="custom-select" id="inputGroupSelect2">
+                              <option value="0a">Any</option>
+                              <option value="1a">Service</option>
+                              <option value="2a">Finance</option>
+                              <option value="3a">IT (Information Technology)</option>
+                            </select>
+                          </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <button type="submit" id="view" class="btn btn-primary mt-3">View Opportunities</button>
+                    </div>
+                </form>
+                </div>
+        </div>
+
+    <div id="allJobs">
+        <div class="">
+            <div class="row">
+                <div class="col-6">
+                    <div class="container mt-5">
+                        <div class="custom-control custom-radio ml-3 d-flex justify-content-start">
+                                <div class="container" id="selectDiv">
+                                    <div id="service1" style="height: 60vh;" class="alert alert-secondary" role="alert">
+                                    <div class="row">
+                                        <h4 id="serviceTitle1" class="alert-heading col">First Officer</h4>
+                                    </div>
+                                        <hr>
+                                        <p>Starting Salary: $70,000</p>
+                                        <p>Objectives: Responsible for the operation and safety of the aircraft and all persons on board during the flight, and transporting all persons and cargo on board during flight.
+                                            Manipulates the flight controls in accordance with company policy.</p>
+                                        <p>Requirements: ATPL or CPL/Multi-IFR with IATRA written
+                                            1500 hours total time which should include 500 hours multi-turbine.
+                                            Completion of secondary school and graduation from a certified flying or aviation school is required.
+                                            A commercial pilot's licence or an air transport pilot's licence is required.</p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="container mt-5">
+                        <div class="custom-control custom-radio ml-3 d-flex justify-content-start">
+                                <div class="container" id="selectDiv">
+                                    <div id="service3" style="height: 60vh;" class="alert alert-secondary" role="alert">
+                                    <div class="row">
+                                        <h4 id="serviceTitle3" class="alert-heading col">Aircraft Maintenance Engineer</h4>
+                                    </div>
+                                        <hr>
+                                        <p>Starting Salary: $90,000</p>
+                                        <p>Objectives: As a member of the Ornge Air maintenance team, successful candidates provide complete aircraft maintenance and support. Services include airframe inspections, repair and modifications, power plant removal and installations and repairs, while ensuring proper adherence to Company policies and procedures.                                </p>
+                                        <p>Requirements: Must hold a current and valid Transport Canada M1 and/or M2 license with a minimum of three (3) years’ experience signing maintenance releases on normal category aircraft. Preference given to applicant’s with AW139 experience;
+                                            Must be eligible to hold a company ACA with a AW139 rating in accordance with MPM Section 3.</p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="container mt-5">
+                        <div class="custom-control custom-radio ml-3 d-flex justify-content-start">
+                                <div class="container" id="selectDiv">
+                                    <div id="supply4" style="height: 60vh;" class="alert alert-secondary" role="alert">
+                                    <div class="row">
+                                        <h4 id="supplyTitle4" class="alert-heading col">Financial Analyst</h4>
+                                    </div>
+                                        <hr>
+                                        <p>Starting Salary: $80,000</p>
+                                        <p>Objectives: Acts as a business partner to management and executives jointly developing forecasting, reporting, analysis, and providing insight into a wide range of business and financial decisions. Initiates analysis of monthly variances, and works directly with operational management, executives, and the financial reporting team to identify and resolve variances to plan.</p>
+                                        <p>Requirements: (CPA, CFA) or MBA an asset. 2+ years of work experience in FP&A supporting business units or similar experience. Deadline driven - Workloads tend to peak during the key deadlines of the annual budget, and forecast processes. Experience in operational and cost savings analysis, and the ability to make sound financial decisions, which may impact the company.</p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="container mt-5">
+                        <div class="custom-control custom-radio ml-3 d-flex justify-content-start">
+                                <div class="container" id="selectDiv">
+                                    <div id="it3" style="height: 60vh;" class="alert alert-secondary" role="alert">
+                                    <div class="row">
+                                        <h4 id="it3" class="alert-heading col">Intermediate Software Developer</h4>
+                                    </div>
+                                        <hr>
+                                        <p>Starting Salary: $80,000</p>
+                                        <p>Objectives: Participate in the design, development and deployment of new software solutions for Airport Systems (including kiosk), Finance, Reservation, and Flight Operations Systems. Work collaboratively with business analysts, project managers, Quality Assurance, and other developers to ensure products are delivered on time and with all required documentation and testing. </p>
+                                        <p>Requirements: Bachelor’s degree in computer science or engineering (or equivalent) preferred. Minimum of 2 years experience developing Microsoft .NET software solutions. Strong .NET software development skills (C#) using Visual Studio 2015 or above. Experience developing ASP.NET MVC applications.</p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- <div>
+        <div class="row">
+            <div class="col-6">
+
+            </div>
+            <div class="col-6">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+
+            </div>
+            <div class="col-6">
+
+            </div>
+        </div>
+    </div> -->
+
+    <div id="serviceJobs" style="display: none;">
+        <div class="row">
+            <div class="col-6">
+                <div class="container mt-5">
+                    <div class="custom-control custom-radio ml-3 d-flex justify-content-start">
+                            <div class="container" id="selectDiv">
+                                <div id="service1"  style="height: 60vh;" class="alert alert-secondary" role="alert">
+                                <div class="row">
+                                    <h4 id="serviceTitle1" class="alert-heading col">First Officer</h4>
+                                </div>
+                                    <hr>
+                                    <p>Starting Salary: $70,000</p>
+                                    <p>Objectives: Responsible for the operation and safety of the aircraft and all persons on board during the flight, and transporting all persons and cargo on board during flight.
+                                        Manipulates the flight controls in accordance with company policy.</p>
+                                    <p>Requirements: ATPL or CPL/Multi-IFR with IATRA written
+                                        1500 hours total time which should include 500 hours multi-turbine.
+                                        Completion of secondary school and graduation from a certified flying or aviation school is required.
+                                        A commercial pilot's licence or an air transport pilot's licence is required.</p>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="container mt-5">
+                    <div class="custom-control custom-radio ml-3 d-flex justify-content-start">
+                            <div class="container" id="selectDiv">
+                                <div id="service2"  style="height: 60vh;" class="alert alert-secondary" role="alert">
+                                <div class="row">
+                                    <h4 id="serviceTitle2" class="alert-heading col">Flight Attendant</h4>
+                                </div>
+                                    <hr>
+                                    <p>Starting Salary: $35,000</p>
+                                    <p>Objectives: Complete all duties and responsibilities for passenger safety and comfort, in accordance with the approved Eminence Airlines Flight Attendant Manual along with company policies.
+                                        During an emergency, follow the instructions of the Captain
+                                        Complete all required safety announcements and demonstrations</p>
+                                    <p>Requirments:Grade 12 diploma or equivalent is required.
+                                        Post-Secondary education in a related field is an asset.
+                                        Previous Flight Attendant experience is an asset.
+                                        CT201 certificate from the Inflight Institute is strongly recommended.</p>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="container mt-5">
+                    <div class="custom-control custom-radio ml-3 d-flex justify-content-start">
+                            <div class="container" id="selectDiv">
+                                <div id="service3"  style="height: 60vh;" class="alert alert-secondary" role="alert">
+                                <div class="row">
+                                    <h4 id="serviceTitle3" class="alert-heading col">Aircraft Maintenance Engineer</h4>
+                                </div>
+                                    <hr>
+                                    <p>Starting Salary: $90,000</p>
+                                    <p>Objectives: As a member of the Ornge Air maintenance team, successful candidates provide complete aircraft maintenance and support. Services include airframe inspections, repair and modifications, power plant removal and installations and repairs, while ensuring proper adherence to Company policies and procedures.                                </p>
+                                    <p>Requirements: Must hold a current and valid Transport Canada M1 and/or M2 license with a minimum of three (3) years’ experience signing maintenance releases on normal category aircraft. Preference given to applicant’s with AW139 experience;
+                                        Must be eligible to hold a company ACA with a AW139 rating in accordance with MPM Section 3.</p>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="container mt-5">
+                    <div class="custom-control custom-radio ml-3 d-flex justify-content-start">
+                            <div class="container" id="selectDiv">
+                                <div id="service4"  style="height: 60vh;" class="alert alert-secondary" role="alert">
+                                <div class="row">
+                                    <h4 id="serviceTitle4" class="alert-heading col">Air Traffic Controller</h4>
+                                </div>
+                                    <hr>
+                                    <p>Starting Salary: $80,000</p>
+                                    <p>Objectives: Responsible for air traffic in a large section of airspace. Use radio communication to issue instructions and clearances. Helping pilots select a runway to controlling the movement of vehicles on runways and taxiways. Provide flight-planning services and deliver in-depth interpretive weather information and en-route flight information to aircrafts. </p>
+                                    <p>Requirements: ATPL or CPL/Multi-IFR with IATRA written
+                                        1500 hours total time which should include 500 hours multi-turbine.
+                                        Completion of secondary school and graduation from a certified flying or aviation school is required.
+                                        A commercial pilot's licence or an air transport pilot's licence is required.</p>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div id="supplyJobs" style="display:none">
+        <div class="row">
+            <div class="col-6">
+                <div class="container mt-5">
+                    <div class="custom-control custom-radio ml-3 d-flex justify-content-start">
+                            <div class="container" id="selectDiv">
+                                <div id="supply1"  style="height: 60vh;" class="alert alert-secondary" role="alert">
+                                <div class="row">
+                                    <h4 id="supplyTitle1" class="alert-heading col">Sales Representative</h4>
+                                </div>
+                                    <hr>
+                                    <p>Starting Salary: $60,000</p>
+                                    <p>Objectives: Act as a representive for airlines and promote benefits and advantages of Eminence Airlines. Establish a solid business relationship with prospects. Accompany the customer throughout their project by taking charge of all internal aspects</p>
+                                    <p>Requirements: College degree in marketing or equivalent.
+                                        2 years of experience directly related to the field. Ability to listen, question, and analyze customer needs, to advise customers in order to establish trust and sell products and services, and to promote customer loyalty.</p>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="container mt-5">
+                    <div class="custom-control custom-radio ml-3 d-flex justify-content-start">
+                            <div class="container" id="selectDiv">
+                                <div id="supply2"  style="height: 60vh;" class="alert alert-secondary" role="alert">
+                                <div class="row">
+                                    <h4 id="supplyTitle2" class="alert-heading col">Regional Sales Manager</h4>
+                                </div>
+                                    <hr>
+                                    <p>Starting Salary: $70,000</p>
+                                    <p>Objectives: The airline district sales manager oversees all of a district’s reservations and ticket sales offices, and the sales representatives in that district. Sales representatives promote their airline in an effort to sell cargo space and plane tickets.</p>
+                                    <p>Requirments: College degree in marketing or equivalent.
+                                        4 years of experience directly related to the field. Ability to listen, question, and analyze customer needs, to advise customers in order to establish trust and sell products and services, and to promote customer loyalty.</p>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="container mt-5">
+                    <div class="custom-control custom-radio ml-3 d-flex justify-content-start">
+                            <div class="container" id="selectDiv">
+                                <div id="supply3" style="height: 60vh;"  class="alert alert-secondary" role="alert">
+                                <div class="row">
+                                    <h4 id="supplyTitle3" class="alert-heading col">Reporting Analyst</h4>
+                                </div>
+                                    <hr>
+                                    <p>Starting Salary: $70,000</p>
+                                    <p>Objectives: Prepare reports and data which identify and track trends in the business (both aeronautical and financial) such as Headcount Analysis, Salary Analysis, Runway Capacity statistics, etc.
+                                        Perform Ad hoc analysis to enable users to get up-to-the-minute insights into data not yet analyzed by a scheduled report                                </p>
+                                    <p>Requirements: University Degree with 1-3 years of experience in IT Finance and/or Business, Engineering. Industry experience or industry related experience (IT db administration, Financial Reporting, aviation, transportation, etc.).  Experience in writing and producing detailed statistical reports and higher level management reports, charts and PDF files</p>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="container mt-5">
+                    <div class="custom-control custom-radio ml-3 d-flex justify-content-start">
+                            <div class="container" id="selectDiv">
+                                <div id="supply4"  style="height: 60vh;" class="alert alert-secondary" role="alert">
+                                <div class="row">
+                                    <h4 id="supplyTitle4" class="alert-heading col">Financial Analyst</h4>
+                                </div>
+                                    <hr>
+                                    <p>Starting Salary: $80,000</p>
+                                    <p>Objectives: Acts as a business partner to management and executives jointly developing forecasting, reporting, analysis, and providing insight into a wide range of business and financial decisions. Initiates analysis of monthly variances, and works directly with operational management, executives, and the financial reporting team to identify and resolve variances to plan.</p>
+                                    <p>Requirements: (CPA, CFA) or MBA an asset. 2+ years of work experience in FP&A supporting business units or similar experience. Deadline driven - Workloads tend to peak during the key deadlines of the annual budget, and forecast processes. Experience in operational and cost savings analysis, and the ability to make sound financial decisions, which may impact the company.</p>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="itJobs" style="display:none">
+        <div class="row">
+            <div class="col-6">
+                <div class="container mt-5">
+                    <div class="custom-control custom-radio ml-3 d-flex justify-content-start">
+                            <div class="container" id="selectDiv">
+                                <div id="it1" style="height: 60vh;" class="alert alert-secondary" role="alert">
+                                <div class="row">
+                                    <h4 id="itTitle1" class="alert-heading col">Technical Solutions Specialist</h4>
+                                </div>
+                                    <hr>
+                                    <p>Starting Salary: $95,000</p>
+                                    <p>Objectives: Reporting to the Associate Director, Enterprise Architect, this position is responsible for partnering with all departments via engagement on projects in order to ensure the best fit in terms of technological infrastructure and software needs for the business. The IT Technical Solutions Specialist will provide technical leadership on adhering to enterprise architecture, governance, and overall IT standards and best practices. 
+                                    </p>
+                                    <p>Requirements: Bachelor’s degree in Computer Science or Engineering and relevant technology or industry certifications. Minimum five (5) years experience in system architecture. Broad knowledge of Enterprise-class networks; Windows/Unix platforms; storage area network (SAN); enterprise monitoring solutions; desktops, laptops, and other mobile devices; Databases, firewalls, anti-virus/anti-spam software, airport line-of-business applications, back-office applications, and common-service applications.</p>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="container mt-5">
+                    <div class="custom-control custom-radio ml-3 d-flex justify-content-start">
+                            <div class="container" id="selectDiv">
+                                <div id="it2" style="padding-bottom: 60vh;" class="alert alert-secondary" role="alert">
+                                <div class="row">
+                                    <h4 id="itTitle2" class="alert-heading col">Platform Engineer</h4>
+                                </div>
+                                    <hr>
+                                    <p>Starting Salary: $78,000</p>
+                                    <p>Objectives: Build new infrastructure, explore new tools, automate technical platforms.
+                                        A Platform Engineer can work across all product groups, teaching developers to leverage tools to make their lives easier as well as build out new tool chains and support a variety of technologies.</p>
+                                    <p>Requirments:You have a bachelor's degree in Computer Science or Software Engineering. We also accept graduate degree, related field, equivalent training or work experience.  You have lots of experience with scripting languages (especially bash and python). You are very familiar with CI tools such as Jenkins, Bitbucket Pipelines or others. Familiar with container technology like Docker, ECS, K8S.</p>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="container mt-5">
+                    <div class="custom-control custom-radio ml-3 d-flex justify-content-start">
+                        <div class="container" id="selectDiv">
+                            <div id="it3" style="height: 60vh;" class="alert alert-secondary" role="alert">
+                            <div class="row">
+                                <h4 id="it3" class="alert-heading col">Intermediate Software Developer</h4>
+                            </div>
+                                <hr>
+                                <p>Starting Salary: $80,000</p>
+                                <p>Objectives: Participate in the design, development and deployment of new software solutions for Airport Systems (including kiosk), Finance, Reservation, and Flight Operations Systems. Work collaboratively with business analysts, project managers, Quality Assurance, and other developers to ensure products are delivered on time and with all required documentation and testing.
+                                                            </p>
+                                <p>Requirements: Bachelor’s degree in computer science or engineering (or equivalent) preferred. Minimum of 2 years experience developing Microsoft .NET software solutions. Strong .NET software development skills (C#) using Visual Studio 2015 or above. Experience developing ASP.NET MVC applications.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="container mt-5">
+                    <div class="custom-control custom-radio ml-3 d-flex justify-content-start">
+                        <div class="container" id="selectDiv">
+                            <div id="it3" style="height: 60vh;" class="alert alert-secondary" role="alert">
+                            <div class="row">
+                                <h4 id="it3" class="alert-heading col">Intermediate Software Developer</h4>
+                            </div>
+                                <hr>
+                                <p>Starting Salary: $80,000</p>
+                                <p>Objectives: Participate in the design, development and deployment of new software solutions for Airport Systems (including kiosk), Finance, Reservation, and Flight Operations Systems. Work collaboratively with business analysts, project managers, Quality Assurance, and other developers to ensure products are delivered on time and with all required documentation and testing.
+                                                            </p>
+                                <p>Requirements: Bachelor’s degree in computer science or engineering (or equivalent) preferred. Minimum of 2 years experience developing Microsoft .NET software solutions. Strong .NET software development skills (C#) using Visual Studio 2015 or above. Experience developing ASP.NET MVC applications.</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <div id="testimonials" style="margin-top: -30vh;">
+    <div style="text-align: center;">
+        <h1 style="color: azure;" class="pb-5">Testimonials</h1>
+    </div>
+        <div class="row d-flex justify-content-around">
+            <div class="col-3" style="border-radius: 10px; background-color: rgba(255, 255, 255, 0.9);">
+                <div class="ml-3" style="text-align: center;">
+                    <h2>Aaron Smith</h1>
+                    <hr style="background-color: black;">
+                    <div class="pb-3" style="text-align: left;">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <div style="text-align: left;">
+                        <p class="font-italic">Aircraft Maintenance Engineer</p>
+                    </div>
+                    <div style="text-align: left;">
+                        <p>"It's been 10 years with Eminence Airlines now. Completing a decade with Eminence Airlines has been one of the memorable moments. It’s been filled with learning and growing within the organization. I am grateful to all my colleagues in Eminence Airlines who had contributed in my journey. I am able to grow professionally and this wouldn't be possible without everyone support!"</p>
+                    </div>           
+                </div>
+            </div>
+            <div class="col-3" style="border-radius: 10px; background-color: rgba(255, 255, 255, 0.9);">
+                <div class="" style="text-align: center;">
+                    <h2>Neel Patel</h1>
+                    <hr style="background-color: black;">
+                    <div class="pb-3" style="text-align: left;">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <div style="text-align: left;">
+                        <p class="font-italic">First Officer</p>
+                    </div>
+                    <div style="text-align: left;">
+                        <p>"I am proud of being a part of Eminence Airlines for the past 5 years. Since I joined the company as fresh graduate, I have had various chances to build up my career here as a Pilot. I am also happy working with my colleagues in Eminence Airlines and wish only the best for our continued success in providing services to our passengers."</p>
+                    </div>           
+                </div>
+            </div>
+            <div class="col-3" style="border-radius: 10px; background-color: rgba(255, 255, 255, 0.9);">
+                <div class="" style="text-align: center;">
+                    <h2>Emily Wang</h1>
+                    <hr style="background-color: black;">
+                    <div class="pb-3" style="text-align: left;">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <div style="text-align: left;">
+                        <p class="font-italic">Intermediate Software Developer</p>
+                    </div>
+                    <div style="text-align: left;">
+                        <p>"This company has an amazing atmosphere! Together we work as a team to make Eminence Airlines a great company with strong core values. I have been fortunate to have been surrounded by great individuals; some of whom really care about their jobs and are generous in sharing knowledge for the purpose of making the teams better."</p>
+                    </div>           
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    </div>    
+    </div>
+
+
+
+
+<script src="job.js"></script>
+</body>
+</html>

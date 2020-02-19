@@ -1,0 +1,110 @@
+
+
+.bookImage{
+    /* background: rgb(11,210,194);
+background: linear-gradient(0deg, rgba(11,210,194,1) 0%, rgba(0,203,255,1) 100%); */
+/* background-image: url("images/photo-of-santorini-greece-1010657 (1).jpg");     */
+background-image: url("images/alberta-amazing-attraction-banff-417074.jpg");
+background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+}
+
+#parentSCH{
+    background-image: url("images/golden-gate-bridge-san-francisco-2104742.jpg");    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+    padding: 100px;
+}
+
+
+.autocomplete-result {
+    cursor: pointer;
+    color: default;
+    margin: 10px;
+    z-index: 100;
+    background-color: rgb(254, 255, 255);
+    width: auto;
+}
+
+.autocomplete-result:hover {
+    background-color: #d4d4da;
+    border-radius: 5px;
+}
+
+#flight1, #flight2, #flight3  {
+    transition-property: background-color;
+    transition-duration: 1.5s;
+    background-color: white;
+}
+
+#titleLight{
+    font-weight: 300;
+}
+
+.icon1{
+    background-color:transparent;
+    padding: 18px;
+    opacity: 80%;
+    background-image: url("images/wifi.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.icon2{
+    background-color:transparent;
+    margin-left: 20px;
+    padding: 18px;
+    opacity: 80%;
+    background-image: url("images/tv.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#payimg{
+    width: auto;
+    height: 35px;
+}
+
+#paydiv3{
+    padding-left: 00px;
+}
+
+#paymentMethod{
+    text-align: left;
+}
+
+/* #cardDetails{
+    visibility: hidden;
+} */
+
+#passdates{
+    margin-bottom: 30px;
+}
+
+#bookSection2, #bookSection3, #bookSection4, #checkout{
+    display: none;
+}
+
+#selectDiv:hover{
+    cursor: pointer;
+}
+
+/* .alert{
+    display: none;
+} */
+
+.footer{
+    padding-top: 8vh;
+    padding-bottom: 5vh;
+    background-color: rgb(57, 164, 172);
+}
+
+#externalLinks{
+    color: white;
+}

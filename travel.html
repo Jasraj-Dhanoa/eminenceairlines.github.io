@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Travel | Eminence Airlines</title>
+    <link rel="icon" href="/Images/logo.PNG">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cards-gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Francois+One&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="travel.css">
+    <link rel="stylesheet" href="bookstyle.css">
+</head>
+<body>
+
+    <div class="travelMain">
+        <nav id="mainnavbar" class="navbar bg-dark navbar-expand-lg fixed-top">
+          <div id="navbarDIV" class="container-fluid">
+
+          <a id="navbarLink" class="navbar-brand" href="index.html">
+            <img src="Images/logowhite.png" style="margin-top: 10px;" width="60" height="60" alt=""> <a style="color: rgb(7, 0, 49); font-size: 20px; font-weight:bolder ;" class="nav-link pr-4" href="index.html"><span style="font-size: larger; margin-left: -10px;">Eminence Airlines</span></a>
+          </a>
+            <button id="toogleNavbar" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <img src="Images/whiteham.png" width="32" height="21" alt="">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a id="navbarLink" class="nav-link pr-4" href="index.html"><span id="navbarHighlight">Home</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a id="navbarLink" class="nav-link pr-4" href="travel.html" style="font-weight: bolder;">Travel</a>
+                </li>
+                
+                <!-- <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="/travel.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Travel
+                  </a>
+                  <div class="dropdown-menu" id="navbarLink" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" id="navbarLink" href="/travel.html#bookingContain">Booking</a>
+                    <a class="dropdown-item" id="navbarLink" href="/travel.html#parentSCH">Schedules</a>
+                    <a class="dropdown-item"id="navbarLink"  href="/travel.html#freqImg">Frequent Flyer</a>
+                  </div>
+                </li> -->
+                <li class="nav-item">
+                  <a id="navbarLink" class="nav-link pr-4" href="careers.html">Careers</a>
+                </li>
+                <li class="nav-item">
+                    <a id="navbarLink" class="nav-link pr-4" href="contact.html">Contact</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+          </nav>
+  <style>
+  .bg-dark{
+      transition: 800ms ease;  
+      background: transparent !important;
+  }
+  
+    .bg-dark.scrolled{
+      background:rgb(82, 180, 187) !important;
+    }
+  
+  </style>
+
+        <div id="travelImage" style="text-align: left; padding-left: 3vh; padding-bottom:53vh; margin-bottom: 9vh;">
+            <h1 style="font-size: 75px; color: white; padding-top: 7%;">TRAVEL</h1>
+        </div>
+
+        <div style="padding: 0 70px 0 70px; margin-bottom: 10vh;">
+            <div class="row justify-content-around pb-5">
+                <h1>Book With Ease</h1>
+            </div>
+            <div class="row justify-content-around">
+                <div class="col-4">
+                    <div class="card" style="width:100%; border: none; text-align: center;">
+                        <h3 class="card-title">Intuitive</h3>
+                        <img class="card-img-top mb-4" src="images/2-people-sitting-with-view-of-yellow-flowers-during-daytime-196666.jpg" alt="Card image" style="width:100%;">
+                        <div class="card-body">
+                          <h5>Our booking platform is interactive and is made with up-to-date technologies to make sure you feel comfortable with your choice. </h5>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-4">
+                    <div class="card" style="width:100%; border: none; text-align: center;">
+                        <h3 class="card-title">Secure</h3>
+                        <img class="card-img-top mb-4" src="images/ballpen-blur-close-up-computer-461077.jpg" alt="Card image" style="width:100%;">
+                        <div class="card-body">
+                            <h5>We have secure databases and implement high secuity measures to ensure no one except you can access your private data.</h5>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-4">  
+                    <div class="card" style="width:100%; border: none; text-align: center;">
+                        <h3 class="card-title">Fast</h3>
+                        <img class="card-img-top mb-4" src="images/ball-shaped-blur-close-up-focus-346885 (1).jpg" alt="Card image" style="width:100%;">
+                        <div class="card-body">
+                            <h5>The steps to book your flight are so simple that it takes seconds before you have your ticket and are off to your adventure.</h5>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bookingContain" id="bookingContain" style="padding-bottom: 6vh;">
+            <div class="bookImage">
+              <div class="formBackground" style="background-color: rgba(245, 245, 245, 0.6); padding: 100px;">
+                <div id="masterdiv">
+                    <div class="pb-5" style="text-align: center;">
+                        <h1>Book Now</h1>
+                    </div>
+                  <div class="container" id="bookSection1">
+                      <form autocomplete="off" id="form1" onsubmit="nextSection('bookSection1', 'bookSection2')">
+                          <h3>General Information</h3>
+                          <hr style="background-color: black;">
+                      <div class="tab">
+                          <div class="row pb-2" id="triptype">
+                              <div class="custom-control custom-radio ml-3">
+                                  <input required checked="checked" class="custom-control-input" type="radio" name="button" id="Return" value="Return" onclick="Append()">
+                                  <label style="font-size: larger;" class="custom-control-label font-weight-bold" for="Return">Return Trip</label>
+                                  <!-- <label class="custom-control-label" for="Return"><img id="payimg" src="visa.png"/></label> -->
+                              </div>
+                          
+                              <div class="custom-control custom-radio ml-3">
+                                  <input required class="custom-control-input font-weight-bold" type="radio" name="button" id="oneWay" value="oneWay" onclick="Remove()">
+                                  <label style="font-size: larger;" class="custom-control-label font-weight-bold" for="oneWay">One Way</label>
+                              </div> 
+                          </div>
+                        
+                          <div class="row" id="test1">
+                              <div id="flyingFrom" class="form-group col ">
+                                  <label style="font-size: larger;" class="font-weight-bold" for="from">Flying From</label>
+                                  <input onchange="checkDistance(this)"  required type="text" class="form-control" id="autocomplete-airport-1" aria-describedby="emailHelp" placeholder="City or Airport">
+                              </div>
+                              <br>
+                          
+                              <div id="flyingto" class=" form-group col">
+                                  <label style="font-size: larger;" class="font-weight-bold"  for="to">Flying To</label>
+                                  <input onchange="checkDistance(this)" required type="text" class="form-control" id="autocomplete-airport-2" aria-describedby="emailHelp" placeholder="City or Airport">
+                              </div>
+                          </div>
+              
+              
+                                     
+                          <div id="dates" class="row ">          
+                              <div class="form-group col">
+                                  <label style="font-size: larger;" class="font-weight-bold" for="dateDeparting">Departing</label>
+                                  <input required placeholder="Select Date" type="date" id="dateDeparting" class="form-control">
+                              </div>
+              
+                              <div id="returndiv" class="form-group col">
+                                  <label style="font-size: larger;"class="font-weight-bold"  id="returnLabel"for="dateDeparting">Returning</label>
+                                  <input required placeholder="Select Date" type="date" id="dateDeparting" class="form-control">
+                              </div>     
+                          </div>    
+                            
+                          <div class="row">
+                              <div class="form-group col">
+                                  <label style="font-size: larger;" class="font-weight-bold" for="numberAdults">Number of Adults</label>
+                                  <input value="0" min="1" value="0" onclick="hello()" type="number" id="numberAdults" class="form-control">
+                              </div>
+              
+                              <div class="form-group col">
+                                  <label style="font-size: larger;" class="font-weight-bold" for="numberChildren">Number of Children</label>
+                                  <input value="0" min="0" required value="0" type="number" id="numberChildren" class="form-control">
+                              </div>
+                          </div>  
+                                      
+                          <button type="submit" onclick="recordPass()" class="btn btn-primary" id="hey" style="background-color: #e4574a;
+                          border: #de5246;" onclick="">Step 2 | View Flights</button>
+                          </div>
+                      </form>
+                  </div>
+              
+                  <div class="col span_1_of_5" style="text-align: center; visibility: hidden;">
+                      Calculated Distance
+                      </br>
+                      <strong id="distance">. . .</strong>
+                  </div>
+              
+                 
+                            
+              <div class="container" id="bookSection2">
+                  <form action="" id="form2" onsubmit="nextSection('bookSection2', 'bookSection3')">
+                  <div class="container" style="text-align: start;">
+                      <h3>Choose Your Flight</h3> 
+                      <hr style="background-color: black;">
+                  </div>
+              
+                  <div class="custom-control custom-radio ml-3 d-flex justify-content-start">
+                      <input required checked="checked" class="custom-control-input" id="Flight1" name="flightType" type="radio">
+                      <label class="custom-control-label" for="Flight1" style="width: 100%;">
+                          <div class="container" style="width: 100%;" id="selectDiv">
+                              <div id="flight1" class="alert alert-secondary" role="alert">
+                                  <div class="row">
+                                  <h4 id="price1" class=" alert-heading col"><span id="titleLight">Flight Price</span> $475 </h4>
+                                  <div class="icon1">
+                                  </div>
+                                  <div class="icon2">
+                              </div>
+                      
+                              </div>
+                                  <hr style="background-color: black;">
+                                  <p>Flight Number: EA350</p>
+                                  <p>Departure Time: 9:30 am (EST)</p>
+                                  <p id="time1">Flight Duration: 4hr 50min</p>
+                              </div>
+                          </div>
+                      </label>
+                  </div>
+              
+                  <!-- <div class="custom-control custom-radio ml-3">
+                      <input required checked="checked" class="custom-control-input" type="radio" name="flightType" id="Flight2">
+                      <label class="custom-control-label" for="Flight2">Return Trip</label>
+                      onclick="changeColor(id)"
+                  </div> -->
+              
+                  <div class="custom-control custom-radio ml-3 d-flex justify-content-start">
+                      <input required class="custom-control-input" type="radio" name="flightType" id="Flight2">
+                      <label class="custom-control-label" style="width: 100%;" for="Flight2">
+                          <div class="container" id="selectDiv">
+                              <div id="flight2" class="alert alert-secondary" role="alert">
+                              <div class="row">
+                                  <h4 id="price2" class="alert-heading col"><span id="titleLight">Flight Price</span> $365 </h4>
+                                  <div class="icon2"></div>
+                              </div>
+                              <hr>
+                              <p>Flight Number: EA467</p>
+                              <p>Departure Time: 12:50 pm (EST)</p>
+                              <p id="time2">Flight Duration: 5hr 10min</p>
+                             </div>
+                          </div>
+                      </label>
+                  </div>
+              
+                  <div class="custom-control custom-radio ml-3 d-flex justify-content-start">
+                      <input required class="custom-control-input" type="radio" name="flightType" id="Flight3">
+                      <label class="custom-control-label" style="width: 100%;" for="Flight3">
+                          <div class="container" id="selectDiv">
+                              <div id="flight3" class="alert alert-secondary" role="alert">
+                              <div class="row">
+                                  <h4 id="price3" class="alert-heading col"><span id="titleLight">Flight Price</span> $490 </h4>
+                                  <div class="icon1">
+                                  </div>
+                                  <div class="icon2">
+                                  </div>
+                              </div>
+                                  <hr>
+                                  <p>Flight Number: EA243</p>
+                                  <p>Departure Time: 7:50 pm (EST)</p>
+                                  <p id="time3">Flight Duration: 4hr 45min</p>
+                              </div>
+                          </div>
+                      </label>
+                  </div>
+              
+              
+                  <div class="container d-flex ml-5 justify-content-start">
+                  <div id="lastcon">
+                    <button type="button" class="btn btn-primary" style="background-color: #e66c61;
+                    border: #e66c61;" id="back" onclick="nextSection('bookSection2', 'bookSection1')">Back</button>
+                      <button type="submit" class="btn btn-primary" onclick="totalCharges()" style="background-color: #e4574a;
+                      border: #de5246;" id="hey">Step 3 | Passenger Information</button>
+    
+                      <!-- <a href="#" id="disabledButtonpass" class="btn btn-primary btn-m disabled" role="button" aria-disabled="true">Step 3 | Passenger Information</a> -->
+                  </div>
+                  </form>
+              </div>
+              </div>
+              
+              
+              <div class="container" id="bookSection3">
+                  <form id="form3" onsubmit="nextSection('bookSection3', 'checkout')">
+                  <h3>Passenger Information</h3>
+                  <div id="forminfocontainer">
+                  </div>
+                  <div>
+                    <button type="button" class="btn btn-primary" style="background-color: #e66c61;
+                    border: #e66c61;" id="back2" onclick="nextSection('bookSection3', 'bookSection2')">Back</button>
+                      <button type="submit" id="checkoutSTEP" style="background-color: #e4574a;
+                      border: #de5246;" class="btn btn-primary">Step 4 | Checkout</button>
+                  </div>
+              
+              </form>
+              </div>
+              
+              <div class="payment container" id="checkout">
+                  <h3>Checkout</h3>
+                  <hr style="background-color: black;">
+                  <form action="" onsubmit="alertbook();">
+                  <div class="row justify-content-md-around">
+                      <div class="col-8">
+                          <div id="paymentMethod" class="row">
+                              <div class="custom-control custom-radio col" id="paydiv">
+                                  <input required  onclick="PaymentNew()" checked="checked" class="custom-control-input" id="Visa" type="radio" name="ppaymentOption" value="Visa">
+                                  <label class="custom-control-label" for="Visa"><img id="payimg" src="images/visa.png"/></label>
+                              </div>
+                            
+                              <div class="custom-control custom-radio col" id="paydiv3">
+                                  <input required onclick="PaymentNew()" class="custom-control-input" id="American Express" type="radio" name="ppaymentOption" value="Visa">
+                                  <label class="custom-control-label" for="American Express"><img id="payimg" src="images/aexpress.png"/></label>
+                              </div>
+                              <div class="custom-control custom-radio col" id="paydiv">
+                                  <input required onclick="Payment()" class="custom-control-input" id="PayPal" type="radio" name="ppaymentOption" value="Visa">
+                                  <label class="custom-control-label" for="PayPal"><img id="payimg" src="images/paypal.png"/></label>
+                              </div>
+                              <div class="custom-control custom-radio col" id="paydiv">
+                                  <input required onclick="PaymentNew()" class="custom-control-input" id="MasterCard" type="radio" name="ppaymentOption" value="Visa">
+                                  <label name="payimg" class="custom-control-label" for="MasterCard"><img id="payimg" src="images/mastercard.png"/></label>
+                              </div>
+                          </div>
+                      
+                          <div id="cardDetails">
+                              <br>
+                              <br>
+                              <div class="row">
+                                  <div class="form-group col ">
+                                      <label id="CardnameLabel" class="font-weight-bold" for="cardname">Cardholder Name</label>
+                                      <input required type="text" class="form-control" id="cardname">
+                                  </div>
+                                  <div class="form-group col ">
+                                      <label id="CardnumLabel2" class="font-weight-bold" for="cardnum">Card Number</label>
+                                      <input required type="text" class="form-control" id="cardnum">
+                                  </div>
+                              </div>
+                      
+                              <div id="details2" class="row">
+                                  <div id="expireDiv" class="form-group col ">
+                                      <label class="font-weight-bold" for="cardexp">Expiration Date</label>
+                                      <input required type="month" class="form-control" id="cardexp">
+                                  </div>
+                                  <div id="postalDiv" class="form-group col ">
+                                      <label class="font-weight-bold" for="cardlocal">Cardholder Postal Code</label>
+                                      <input required type="text" class="form-control" id="cardlocal">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                          <div class="col-3">
+                              <div class="container">
+                                  <h4 class="font-weight-bold" >Payment</h4>
+                                  <hr style="background-color: black;">
+                                  <div class="row pb-4">
+                                      <h6 class="font-weight-bold" id="totalPassengers"></h6>
+                                  </div>
+                                  <div class="row pb-4">
+                                      <h6 class="font-weight-bold" id="eachTicketPrice"></h6>
+                                  </div>
+                                  <div class="row pb-4">
+                                      <h6 class="font-weight-bold" id="Subtotal"></h6>
+                                  </div>
+                                  <div class="row pb-4">
+                                      <h4 class="font-weight-bold" id="Total"></h4>
+                                  </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div id="finalPaybutton" class="container" >
+                              <div class="row">
+                                <div class="col-2">
+                               <button type="button" class="btn btn-primary mt-3" style="background-color: #e66c61;
+                               border: #e66c61;" id="back3" onclick="nextSection('checkout', 'bookSection3')">Back</button>
+                                </div>
+                                <div class="col-1">
+                                    <button type="submit" style="background-color: #e4574a;
+                              border: #de5246;" id="done" class="btn btn-primary mt-3">Checkout!</button>
+                                </div>
+                              </div>
+                              <!-- <button type="submit" style="background-color: #e4574a;
+                              border: #de5246;" class="btn btn-primary mt-3">Checkout!</button> -->
+                          </div>
+                          <!-- <div class="container"> -->
+                          <!-- <button type="button" class="btn btn-primary" style="background-color: #e4574a;
+                            border: #de5246;" id="back3" onclick="nextSection('bookSection4', 'bookSection3')">Previous</button> -->
+                            <!-- </div> -->
+                      </div>
+              </div>
+              </form>
+              </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="freqImg" style="text-align: center;" class="frequent Flyer">
+              <h1 class="pb-5 pt-5">Frequent Flyer Program</h1>
+              <div class="row">
+                <div style="margin-left: 5vh;" class="col-7" id="manLugggage">
+                </div>
+                <div class="col-4" style="text-align: left; margin-left: 30px; margin-top: 3vh;">
+                    <h4 class="pb-5">Eminence Airlines Premium is designed to elevate the travel experiences of our most frequent flyers. You’ve chosen to fly the world with us, and we want to celebrate your loyalty.</h4>
+                    <h5 class="pb-5"> As an Eminence Airlines Premium member, you benefit from Eminence Airlines's partnership with the Aeroplan Program, which provides for a wide range of ways to earn and redeem valuable Aeroplan Miles, including flights to over 1,200 destinations worldwide. And of course, Premium's Qualifying Miles earned on eligible flights with Eminence Airlines!</h5>
+                    <form id="form4" onsubmit="showAlert();" id="signUP" action="">
+                        <div class="row">
+                            <div class="form-group col-8">
+                                <input placeholder="Email Address" required type="email" class="form-control">
+                            </div>
+                            <div class="form-group col-4">
+                                <button type="submit" id="learnMore" class="btn btn-primary" style="background-color: #e4574a;
+                                border: #de5246;">Learn More</button>
+                            </div>
+                        </div> 
+                    </form>
+                        <script>
+                            function showAlert(){
+                                if($("#alertMe").find("div#myAlert2").length==0){
+                                    $("#alertMe").append("<div class='alert alert-success alert-dismissable' id='myAlert2'> <button type='button' class='close' data-dismiss='alert'  aria-hidden='true'>&times;</button> Success! message sent successfully.</div>");
+                                }
+                                $("#alertMe").css("display", "");
+                                }
+                        </script>
+                        
+                        <div id="alertMe" style="display:none;" class="row">
+                            <div class="col-10">
+                                <div class="alert alert-success alert-dismissable" id="myAlert2">
+                                    An email is sent to you regarding further sign-up instructions!
+                                </div>
+                            </div>
+                        </div> 
+                </div>
+              </div>
+          </div>
+
+          <div>
+            <div id="parentSCH">
+                <div style="background-color: rgba(245, 245, 245, 0.6); padding: 120px;">
+                <div class="container pb-4" id="scheduleMain">
+                    <div style="text-align: center;">
+                        <h1 class="pb-5">Check Schedules</h1>
+                        </div>
+                    <h2>Flight Information</h2>
+                    <hr>
+                    <form autocomplete="off" id="SCHform" onsubmit="nextSectionSch('randomtbl')">
+                        <div class="row" id="">
+                            <div id="depart" class="form-group col ">
+                                    <label style="font-size: larger;" class="font-weight-bold" for="dep">Flying From</label>
+                                    <input onclick="remove()" required type="text" class="form-control" id="fromSch" aria-describedby="emailHelp" placeholder="City or Airport">
+                                </div>
+                                <div id="arrive" class=" form-group col">
+                                    <label style="font-size: larger;" class="font-weight-bold" for="arr">Flying To</label>
+                                    <input required type="text" class="form-control sch2" id="toSch" aria-describedby="emailHelp" placeholder="City or Airport">
+                                </div>
+                            <div class="form-group col">
+                                <label style="font-size: larger;" class="font-weight-bold" for="Date">Date</label>
+                                <input required placeholder="Select Date" type="date" id="Date" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-md-end">
+                            <div class="col-1">
+                                <button type="submit" id="view" class="btn btn-primary mt-3" style="background-color: #e4574a;
+                                border: #de5246;">View</button>
+                            </div>
+                            <div class="col-2" id="viewAnother" style="display: none">
+                                <button type="button" id="viewAnthbutton" onclick="location.reload();" class="btn btn-primary mt-3" style="background-color: #e4574a;
+                                border: #de5246;">View Another</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="container" style="display: none;" id="randomtbl">
+                    <table class="table table-dark table-hover">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Flight Number</th>
+                            <th scope="col">Departure</th>
+                            <th scope="col">Arrival</th>
+                            <th scope="col">Status</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>EA 350</td>
+                            <td>7:00 AM</td>
+                            <td>1:00 PM</td>
+                            <td class="text-success font-weight-bold">Arrived</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>EA 467</td>
+                            <td>12:00 PM</td>
+                            <td>4:00 PM</td>
+                            <td class="text-primary font-weight-bold">Mid-Flight</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>EA 743 </td>
+                            <td>8:00 PM</td>
+                            <td>12:00 AM</td>
+                            <td class="text-warning font-weight-bold">Scheduled</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>EA 215 </td>
+                            <td>9:00 AM</td>
+                            <td>1:00 PM</td>
+                            <td class="text-primary font-weight-bold">Mid-Flight</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">5</th>
+                            <td>EA 109 </td>
+                            <td>11:00 AM</td>
+                            <td>3:00 PM</td>
+                            <td class="text-danger font-weight-bold">Deylayed</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+                </div>
+          </div>
+        </div>
+
+        <div class="footer">
+
+            <div class= "row justify-content-around" style="padding-bottom: 1vh;">
+              <div class="col-2">
+                  <h1 id="externalLinks" >Eminence Airlines</h1>
+                  <br>
+                  <h5 id="externalLinks" >The sky's the limit!</h5>
+                </div>
+                <div class="col-2">
+                  <h5><a href="#" id="externalLinks">Home</a></h5>
+                  <br>
+                  <br>
+                  <h5><a id="externalLinks" href="#">Book</a></h5>
+                </div> 
+                <div class="col-2">
+                  <h5><a  id="externalLinks" href="#">Schedules</a></h5>
+                  <br>
+                  <br>
+                  <h5><a id="externalLinks" href="#">Flyer Programs</a></h5>
+                </div> 
+                <div class="col-2">
+                  <h5><a id="externalLinks" href="#">Careers</a></h5>
+                  <br>
+                  <br>
+                  <h5><a id="externalLinks" href="#">Contact</a></h5>
+                </div> 
+              </div>
+              <hr style="background-color:rgb(224, 216, 216)">
+              <div style="text-align: center;">
+              <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
+              <a href="https://twitter.com/" target="_blank" class="fa fa-twitter"></a>
+              <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
+              <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.plus&hl=en" target="_blank" class="fa fa-google"></a>
+            </div>
+              <style>
+                .fa {
+              padding: 10px;
+              font-size: 30px;
+              width: 50px;
+              text-align: center;
+              text-decoration: none;
+              margin: 5px 2px;
+              border-radius: 100px;
+            }
+      
+            .fa:hover {
+              color: whitesmoke;
+            }
+      
+            .fa-facebook {
+              background: #3B5998;
+              color: white;
+            }
+      
+            
+          .fa-twitter {
+            background: #55ACEE;
+            color: white;
+          }
+      
+          .fa-google {
+            background: #dd4b39;
+            color: white;
+          }
+      
+          .fa-instagram {
+          background: #125688;
+          color: white;
+        }
+      
+              </style>
+      
+          </div>
+
+
+    </div>
+
+    <script>
+        $(window).scroll(function(){
+        $('nav').toggleClass('scrolled', $(this).scrollTop() > 870);
+        });
+  
+        $('.counter').countUp({
+          'time': 2200,
+          'delay': 30
+           } );
+      </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/airport-autocomplete-js@latest/dist/index.browser.min.js"></script>
+    <script src="bookScript.js"></script>
+</body>
+</html>
+
+<!-- background: rgb(11,210,194); -->
+        <!-- background: linear-gradient(0deg, rgba(11,210,194,1) 0%, rgba(0,203,255,1) 100%); padding: 200px; text-align: center;" -->
