@@ -1,2 +1,2 @@
 # eminenceairlines.github.io
-# This is a project by Jasraj Dhanoa
+# Please go to eminenceairlines.com to view the live website!
